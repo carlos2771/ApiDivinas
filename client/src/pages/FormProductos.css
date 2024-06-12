@@ -1,0 +1,101 @@
+/* FormProductos.css */
+.formulario-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    
+  }
+  
+  .formulario {
+    background-image: url("https://i.pinimg.com/736x/4e/85/cb/4e85cb58b585e24a97fa46cabae2cc47.jpg");
+    width: 600px;
+    height: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .formulario-titulo {
+    color: rgb(6, 6, 6);
+    font-family: 'Irish Grover',cursive;
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  /* input[type="text"],
+  input[type="number"],
+  input[type="file"],
+  select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #45a049;
+  } */
+  
+.formulario-textos{
+    display: flex;
+    gap: 10px;
+}
+input[type="text"],
+  input[type="number"],
+  input[type="file"] {
+   
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+
+  }
+  select{
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+
+  .descripcion{
+    width: 95%;
+   height: 100px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+  
+  }
+  input[type="submit"]{
+    width: 100%;
+    padding: 10px;
+    border-radius: 4px;
+    border: none;
+    background-color: #f63a6fe7;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #580019;
+  }
+  
+  

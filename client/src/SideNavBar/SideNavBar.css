@@ -1,0 +1,169 @@
+.side-nav-container {
+    background-color: #fe6e94;
+    width: 300px;
+    height: 100vh;
+    position: relative;
+    color:#ffff;
+    font-family: 'Irish Grover',cursive;
+   
+   
+    transition: 0.4s;
+   
+}
+
+.side-nav-container-NX{
+    width: 85px;
+}
+
+.nav-upper, .nav-heading, nav-menu, menu-item{
+    display: grid;
+}
+
+.nav-heading{
+    grid-template-columns: 2fr, 1fr;
+    grid-template-rows: 1fr;
+    height: 75px;
+}
+
+.nav-brand{
+    display: flex;
+}
+
+.nav-brand p{
+    width: 40px;
+    padding: 0 10px;
+}
+
+.hamburguer{
+    position: absolute;
+    right: 0;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: auto -35px;
+     background-color: #ffa9be;
+    border: 2px solid #ffff;
+    padding: 20px;
+    border-radius: 90px;
+    height: 71px;
+    width: 74px;
+}
+
+.hamburguer span{
+    display: block;
+    margin-top: 5px;
+    margin-left: 5px;
+    background-color: #fff;
+    border-radius:  15px;
+    height: 4px;
+    width: 20px;
+
+    transition: 0.4s;
+}
+
+.hamburguer:hover span{
+    margin: auto;
+}
+
+.hamburger-in:hover span:nth-child(1) {
+	width: 25px;
+	transform: translateY(4px) rotate(-25deg);
+}
+.hamburger-in:hover span:nth-child(2) {
+	width: 40px;
+}
+.hamburger-out {
+	margin-left: 24px;
+}
+.hamburger-out:hover span:nth-child(1) {
+	width: 25px;
+	transform: translate(14px, 4px) rotate(-155deg);
+}
+.hamburger-out:hover span:nth-child(2) {
+	width: 40px;
+}
+.hamburger-out:hover span:nth-child(3) {
+	width: 25px;
+	transform: translate(14px, -4px) rotate(155deg);
+}
+
+.nav-menu{
+    grid-template-rows: repeat(7,1fr);
+    margin-top: 50px;
+    
+    
+}
+
+.menu-item{
+    height: 57px;
+    width: 16em;
+    display: flex;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin: auto 20px;
+    border-radius: 10px;
+    position: relative;
+}
+.menu-item:hover{
+    background-color: #ffa9be;
+}
+
+.menu-item p svg {
+    width: 30px; 
+    height: 30px; 
+ 
+}
+.menu-item .text {
+    margin-left: 10px; 
+}
+
+.menu-item-NX{
+    margin: auto;
+    width: 4.5em;
+    top: 45px;
+
+}
+
+.tooltip{
+    display: none;
+    position: absolute;
+    left: 99%;
+    bottom: 80%;
+    width: auto;
+    padding: 4px, 8px;
+    border-radius: 15px 15px 15px 0;
+    background-color: #061b28;
+    border: 2px solid #fff ;
+}
+
+.menu-item:hover> .tooltip{
+    display: block;
+}
+
+.logout {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.nav-footer{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    grid-template-columns: 2fr 1fr;
+    
+}
+
+
+.nav-details a{
+    width: 50px;
+    padding: 0 10px;
+    
+     
+}
+.nav-details{
+    padding-bottom: 10px;
+}
+
+
