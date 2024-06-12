@@ -27,7 +27,7 @@ export default function FormProductos() {
 
     const res = await createProductos(formData);
     if (res) {
-      
+     
       getProductos();
       }
       };
