@@ -8,9 +8,14 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { useLogin } from "../hooks/useLogin";
+
+
 
 export default function SideNavBar() {
   const [isExpended, setExpendedState] = useState(false);
+  const {isAuthenticated} = useLogin()
+  
   const menuItems = [
     {
       text: "Formulario",
@@ -20,9 +25,14 @@ export default function SideNavBar() {
       text: "Crear",
       icon: <FontAwesomeIcon icon={faPlus} />,
     },
+    {
+      text: "/",
+      icon: <FontAwesomeIcon icon={faPlus} />,
+    },
   ];
 
   return (
+    <div  className={!isAuthenticated ? "oculto" : null} >
     <div
       className={
         isExpended
@@ -76,6 +86,7 @@ export default function SideNavBar() {
           </a>
         </div>
       </div>
+    </div>
     </div>
   );
 }

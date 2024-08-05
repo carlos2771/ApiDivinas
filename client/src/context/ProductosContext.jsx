@@ -23,7 +23,7 @@ export const ProductosProvider = ({children}) => {
             console.log(res);
             setProductos(res)
         } catch (error) {
-            console.error("error en la solicitud de get productos",error);
+            console.error("error en la solicitud de crear productos",error);
         }
     }
 

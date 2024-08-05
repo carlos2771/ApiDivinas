@@ -10,7 +10,9 @@
     transition: 0.4s;
    
 }
-
+.oculto {
+    display: none;
+  }
 .side-nav-container-NX{
     width: 85px;
 }

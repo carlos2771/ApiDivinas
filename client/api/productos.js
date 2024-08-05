@@ -10,3 +10,4 @@ export const createProductosRequest = async(data) =>{
     console.log("datos",response);
     return response.data
 }
+
